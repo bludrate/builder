@@ -1,7 +1,7 @@
 'use strict';
 
 var Task = require( './task' );
-var react = require( './' );
+var react = require( 'gulp-react' );
 
 var React = Task.createChild();
 
