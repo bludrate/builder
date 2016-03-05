@@ -45,7 +45,7 @@ Task.prototype.watch = function() {
       extend( options, this.config.watch );
     }
 
-    watch( src, options, this.build.bind( this, runNext && this.nextTask ) );
+    watch( src, options, this.build.bind( this, runNext ) );
 
     // Don't build task on run
     if ( initRun === false ) {
@@ -72,7 +72,7 @@ Task.prototype.run = function() {
  * Build src files and put it to dest
  * @returns {Stream}
  */
-Task.prototype.build = function( nextTask ) {
+Task.prototype.build = function( runNext ) {
   var stream = this.config.src ? gulp.src( this.config.src, this.config.gulpSrc ) : this.prevStream;
 
   stream.on( 'error', function( error ) {
@@ -114,8 +114,8 @@ Task.prototype.build = function( nextTask ) {
     }
   }
 
-  if ( nextTask ) {
-    nextTask( stream );
+  if ( runNext ) {
+    this.nextTask( stream );
   }
 
   // gulp don't end stream while coping images
