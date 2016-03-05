@@ -1,0 +1,53 @@
+{
+  "name": "bet-builder",
+  "version": "1.1.4",
+  "description": "Easily configurable build system created for BETLAB team with **love**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Air",
+    "email": "air-dev@betlab.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://git.betlab.com:fei/bet-builder.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.4.1",
+    "merge2": "^0.3.6",
+    "gulp-watch": "^4.3.5",
+    "browser-sync": "^2.10.0",
+    "gulp-riot": "^0.2.15",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.1.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-less": "^3.0.5",
+    "gulp-angular-templatecache": "^1.8.0",
+    "require-dir": "^0.3.0",
+    "through2": "^2.0.0",
+    "gulp-replace": "^0.5.4"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "c7b40a64d5b4808e029c0ac7b776d9a90aa0258b",
+  "_id": "bet-builder@1.1.4",
+  "_shasum": "46ebb1ccf04969b4b36166de961ca3f3c5f30a07",
+  "_from": "bet-builder@>=1.1.4 <2.0.0",
+  "_npmVersion": "2.14.12",
+  "_nodeVersion": "4.3.1",
+  "_npmUser": {},
+  "dist": {
+    "shasum": "46ebb1ccf04969b4b36166de961ca3f3c5f30a07",
+    "tarball": "http://npm.betlab.private/bet-builder/-/bet-builder-1.1.4.tgz"
+  },
+  "_resolved": "http://npm.betlab.private/bet-builder/-/bet-builder-1.1.4.tgz",
+  "readme": "ERROR: No README data found!"
+}

@@ -1,0 +1,40 @@
+{
+  "preset": "jquery",
+  "esnext": true,
+  "requireSpacesInsideParentheses": {
+    "all": true,
+    "except": [
+      "{",
+      "}",
+      "[",
+      "]",
+      "function"
+    ]
+  },
+  "disallowSpacesInCallExpression": true,
+  "requirePaddingNewLinesBeforeLineComments": null,
+  "requireSpaceAfterLineComment": {
+    "allExcept": [
+      "#",
+      "="
+    ]
+  },
+  "disallowMultipleLineBreaks": true,
+  "requireCapitalizedComments": null,
+  "validateIndentation": 2,
+  "validateQuoteMarks": {
+    "mark": "'",
+    "escape": true
+  },
+  "requireDotNotation": null,
+  "requireCurlyBraces": [
+    "else",
+    "for",
+    "while",
+    "do",
+    "try",
+    "catch",
+    "case",
+    "default"
+  ]
+}
