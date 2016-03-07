@@ -90,10 +90,13 @@ Task.prototype.build = function( runNext ) {
     stream = stream.pipe( sourcemaps.init( sourcemapsInitConf ) );
   }
 
-  if ( this.config.concat )
-    stream = stream.pipe( concat( this.config.concat ) );
+  if ( this.config.preConcat )
+    stream = stream.pipe( concat( this.config.preConcat ) );
 
   stream = this.main( stream );
+
+  if ( this.config.concat)
+    stream = stream.pipe( concat( this.config.concat ) );
 
   if ( this.config.sourcemaps ) {
     var sourcemapsWriteDest = typeof this.config.sourcemaps === 'object' ?

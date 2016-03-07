@@ -45,7 +45,7 @@ BetBuilder.prototype.runTask = function( i, prevStream ) {
    */
   function next( stream ) {
     if ( self.configs.length - 1 > i ) {
-      self.runTask( ++i, stream );
+      self.runTask( i + 1, stream );
     }
   }
 
